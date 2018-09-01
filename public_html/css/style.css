@@ -1,0 +1,238 @@
+/*just for help*/
+#screenWidth{
+  width:2rem;
+  height:1rem;
+  background-color: lightgray;
+  padding:3px;
+  margin:1rem 0 0 45%;
+}
+/*css basic*/
+*{margin: 0;
+      padding: 0;}
+html, body {font: 97% Helvetica, sans-serif;}
+html{
+  margin:0 0;
+}
+body{
+  font-family:'Verdana','Arial', sans-serif;
+  font-weight: lighter;
+  margin:0 0;
+}
+h1, h2, h3, h4, h5{
+   font-weight:lighter; 
+}
+h1{
+    font-size:1.9rem;
+}
+h2{  
+  font-size:1.6rem;
+  color:#525252;  
+}
+h4{
+  font-weight:lighter;
+  font-size:1.2rem;
+  color:#616161;
+  margin:0 0 2% 0;
+}
+h5{
+  font-weight: lighter;
+  font-size:1.1em;
+  color:#646464;
+  margin:0 0 1.5% 0;
+}
+#all{
+  margin:0 0;
+  text-align: center;
+  height:auto;
+}
+.clear{
+  clear:both;
+}
+hr{
+  color:orange;
+  margin:0 0 1% 0;
+  height:3px;
+}
+
+/*elements*/
+header{
+  text-align: center;  
+}
+#opacityBg{
+  position:fixed;
+  top:0;  
+  left:0;
+  width:100%;  
+  padding:0 0 250% 0;
+  background-color:gray; 
+  opacity:0.7; 
+  display:none;
+  z-index:0;
+}
+#logo{   
+  background-image: url('../assets/images/logo.png');     
+  background-size:80% 80%;  
+}
+#banner, .miete, .verkehr, .familie, #buerozeiten, #picEmail, #sandwich, #picMain, #logo{
+    width:100%;
+    padding:0 0 10% 0;
+    background-size:100% 100%;  
+    background-repeat: no-repeat;        
+}
+#banner{     
+    top:0;
+    left:0;
+    height:4rem;
+    background-image: url("../assets/images/Banner1.jpg");
+    background-size:auto 100%;
+    background-repeat:repeat-x;
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    margin:0 0 6% 0;    
+} 
+#banner>h1{
+    color:whitesmoke;
+    text-shadow:0 0 3px #000;
+    text-transform: uppercase;
+    padding:1% 0 0 0;
+}
+#navTop{
+    margin:-10% 0 0 0;
+}
+#sandwich{
+    width:50%;
+}  
+.miete{
+    background-image:url('../assets/images/buttonBulletMiete.png');    
+}
+.familie{
+    background-image:url('../assets/images/buttonBulletFamilie.png');
+}
+.verkehr{
+    background-image:url('../assets/images/buttonBulletVerkehr.png');
+} 
+
+/****asideLeft*****/
+#asideLeft{
+    display:none;
+}
+.aAsideNav:hover{
+    color:darkgray;
+    background-color:whitesmoke;
+    border-bottom: 3px orange solid;
+}
+#toggleKanzlei, #toggleKontakt{
+    display: none;
+}
+#sandwich{
+    background-image:url('../assets/images/iconMenubar.png');
+    cursor:pointer;
+    display:block;
+}
+.view{
+    margin:1% 0 0 0;
+    padding:5% 5% 0 5%;
+}
+/********Aside Right************/
+
+#asideRight .card{
+    border:none;
+    text-align: center;
+}
+#buerozeiten{
+   background-image:url('../assets/images/buerozeiten.jpg'); 
+}
+#picEmail{
+   margin:10% 0 0 0;
+   padding:0 0 50% 0; 
+   
+  background-image:url('../assets/images/email.png'); 
+}
+#submenuKanzlei{
+    display:none;
+}
+#siteWidth{
+    width:20%;
+    padding:0 0 20% 0;
+    background-color:lightgrey;
+}
+/***cards****/
+.card-title{
+    font-size:1.3rem;
+}
+#cards{
+    background-color:#ffffcc;
+}
+#cards .card{
+    background-color:#f3f3ee;
+}
+
+#picMain{
+    margin:0 auto;
+    width:75%;    
+    padding:0 0 70% 0;
+    background-image:url('../assets/images/Rainer_DoeringKanzlei.png');
+}
+
+/**DropdownNavi*/
+
+
+#contactForm{
+  padding:15px;
+  background-color: #fcbc4d;
+  width: 60%;
+  margin:5% auto 3rem auto;  
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #cacaca;
+  opacity:0.7;
+}
+#name, #emailAddress, #message{
+  width:85%;
+  padding:1%;
+  margin:2% 5%;
+}
+#messageCheck{
+  border:1px solid gray;
+  border-radius:6px;
+  text-align:left;
+  margin:2% 3%;
+  padding:3%;
+}
+
+#stadtplan{
+  width:70%;
+  height:200px;  
+  margin:0;
+}
+.iframeContainer{
+  width:100%;
+  padding:0 0 50% 0;
+  overflow:hidden;
+  clear:both;
+}
+#tel{
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+#iframe{
+  width:70%;
+  padding:0 0 70% 0;
+  border:0;
+  frameborder:0;
+}  
+#tableDatenschutz table td{
+    text-align:left;
+}
+footer{
+  background-color:orange;
+  text-align:center;
+  height:auto;
+  font-size:0.9rem;
+  padding:3px;  
+  opacity:0.6;
+}
+footer a{  
+  font-size:0.8rem;
+}
+/**Zoomeffekt bei Bildern*/

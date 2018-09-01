@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Rechtanwalt Berlin Tempelhof</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta charset="utf-8">
+  <meta name="description" content="Rechtsanwaltskanzlei Rainer D&ouml;ring in Berlin Tempelhof, U-Bahnhof Alt-Tempelhof, Rechtsanwalt f&uuml;r Verkehr-, Familien- und Mietrecht">
+  <meta name="keywords" content="Rechtsanwalt, Berlin, Rechtsanwalt Tempelhof, Rechtsstreit, Anwalt, Klage, Gericht, Gerichtsverfahren, Urteil, Anzeige">  
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link href="css/bootstrap.css" rel="stylesheet" />  
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/responsive.css">  
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+  <script src="js/lib/jquery.min.js" type="text/javascript"></script>     
+  <script src="js/lib/angularJS.js"></script>
+  <script src="js/lib/ngRoute.js"></script>        
+  <script src="js/mainJS.js"></script>
+  <script src="js/lib/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/js.js"></script> 
+  <script src="js/mainJS.js"></script>    
+</head>
+<body ng-app="mainApp" ng-controller="mainCtrl">
+    <div id="screenWidth"></div><br>
+  <!--input type="text" ng-model="test"><br>
+  {{test}}<-->     
+  <section ng-include="'html/header.html'"></section>    
+  <div class="row">
+      <div class='col-12 col-md-2' ng-include="'html/asideLeft.html'"></div>
+      <div ng-view class='view col-12 col-md-8'></div>
+      <div class='col-12 col-md-2' ng-include="'html/asideRight.html'"></div>      
+  </div>   
+  <div ng-include="'html/cards.html'"></div>
+  <section ng-include="'html/footer.html'"></section>
+  
+  
+ </body>
+</html>

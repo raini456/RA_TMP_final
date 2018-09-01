@@ -1,0 +1,137 @@
+
+/*****Basics*******/
+.container{    
+    box-shadow: 0 0 5% gray;
+}
+html {
+    font-size: 2vh;
+}
+/********HEADER**********/
+header{
+    width:100%;
+    top:0;
+    left:0; 
+    z-index:2;
+}
+#banner, .miete, .verkehr, familie{
+    width:100%;
+    padding:0 0 10% 0;
+    background-size:100% 100%;  
+    background-repeat: no-repeat;        
+}
+#banner{     
+    top:0;
+    left:0;
+    background-image: url("../assets/images/Banner.png");
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    margin:0 0 6% 0;
+    background-color:red;
+}   
+.miete{
+    background-image:url('../assets/images/buttonBulletMiete.png');    
+}
+.familie{
+    background-image:url('../assets/images/buttonBulletFamilie.png');
+}
+.verkehr{
+    background-image:url('../assets/images/buttonBulletVerkehr.png');
+}
+#logo, #titleBanner{
+    margin:5% 0 -25% 0;
+    width:60%; 
+    padding:0 0 60% 0;
+    background-image:url('../assets/images/logo.png'); 
+    background-size:100% 100%;
+    background-repeat:no-repeat;   
+}
+#titleBanner{
+    margin-top:-1%;
+    margin-left:-8%;
+    width:100%;
+    background-image:url('../assets/images/schriftzugBanner.png');
+    background-size:95% 55%;   
+    padding:0 0 10% 0; 
+
+} 
+#navTop ul{
+    list-style: none;
+    display:inline;
+}
+#navTop{    
+    margin:-15% 0 0 0;    
+}
+#navTop li {    
+    width:33%;
+    text-align:center;    
+    float:left;
+}
+
+
+#navTop li a{
+    padding:20% 0 0;    
+    color:whitesmoke;
+    text-shadow:0 0 3px black;
+    font-size: 190%;
+    text-decoration: none;
+}/**/
+
+#navSandwich{
+    width:18%;
+    display: none;
+    padding:0 0 18% 0;    
+    background-image:url('../assets/images/menubarIcon.png');
+    margin:-15% 0 0 40%;
+    z-index:5;    
+    cursor: pointer;    
+}
+
+
+.btnNav{
+   width:100%;
+   cursor:pointer;  
+   z-index: 2;   
+}
+#btnNavVerkehr, #btnNavMiete, #btnNavFamilie{
+    width:7rem;
+    height:7rem;
+    background-image: url('../assets/images/buttonBulletVerkehr.png');
+    background-repeat: no-repeat;
+    background-size:70% 70%;
+    z-index:2;
+}
+#btnNavFamilie{
+    background-image:url('../assets/images/buttonBulletFamilie.png');
+}
+#btnNavMiete{
+    background-image:url('../assets/images/buttonBulletMiete.png');
+}
+#navToggleSmall{
+    display: none;
+    z-index: 2;
+}
+/*********MAIN*********/
+main{
+    margin:-12% 0 0 0;
+    padding:5%;
+    z-index: 0;
+}
+.left{
+    display: none;
+}
+#buerozeiten, #imgEmail{
+    width:12rem;
+    height:12rem;
+    margin:0 auto;
+    border-radius:8%;
+    box-shadow:0 0 5px black;
+    background-image:url('../assets/images/Buerozeiten.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#imgEmail{
+    width:6rem;
+    height:6rem;
+    box-shadow: 0 0 3px gray;
+background-image:url('../assets/images/email.png');
+}
