@@ -1,12 +1,15 @@
 $(document).ready(function(e){
 	//formatWidth();
 	var screenWidth = 0;
-	$(window).resize(function(e){
-		formatWidth();		
+	$(window).resize(function(e){            
+	    formatWidth();		
 	});
 	function formatWidth(){
 		screenWidth=$(window).width() + 17;
-		$('#screenWidth').html(screenWidth);			
+                if(screenWidth>767){                    
+                    $('#asideLeft').slideDown();
+                }
+		$('#screenWidth').html(screenWidth);
 		screenWidth1=screenWidth/3;
 		screenWidth2=screenWidth/4;
 		$('.imagesSmall').css('width', screenWidth1);

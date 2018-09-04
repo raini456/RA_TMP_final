@@ -72,11 +72,8 @@ app.config(['$routeProvider', function ($routeProvider) {
                     redirectTo: 'html/main.html'
                 });
     }]);
-app.controller('mainCtrl', function () {    
-    $('#screenWidth').click(function(){
-        console.log("Hi");
-        //$('#navAsideLeft').slideToggle("slow");
-    });
+app.controller('mainCtrl', function () {
+
 });
 app.controller('indexCtrl', function ($scope) {});
 app.controller('headerCtrl', function ($scope) {
@@ -89,10 +86,10 @@ app.controller('headerCtrl', function ($scope) {
             height: "'" + logoHeight + "'"//logoHeight
         });
     });    
-    $('#navToggleSmall li').click(function () {
-        $('#navToggleSmall').slideUp("slow");
-    });
-    $('#sandwich').click(function(){
+    $('#sandwich').click(function () {
+        $('.linkSandwich').css({
+            display:'none'
+        });
         $('#asideLeft').slideToggle('slow');
     });
 });
@@ -109,14 +106,45 @@ app.controller('asideLeft', function ($scope) {
         $('#toggleKanzlei').slideUp(200);
         $('#toggleKontakt').slideUp(200);
     };
-    $scope.slideUpNavSite1 = function () {
-        $('.navSmall').slideUp(200);
-    };
+    $('.aAsideNav').click(function () {
+        var screenWidth = $(window).width() + 17;
+        if (screenWidth <= 767) {
+            $('#asideLeft').slideUp('slow');
+            $('.linkSandwich').css({
+                display:'block'
+            });
+        }
+    });   
 });
-app.controller('asideLeftCtrl', function ($scope) {
-        $('#toggleKanzlei').mouseover(function(){
-            $('#submenuKanzlei').slideToggle('slow');
-        });;
+app.controller('sliderCtrl', function () {        
+    var no=0;
+    $('li').click(function(){
+        $('li').removeClass('active');
+        $(this).addClass('active');
+        no=$(this).attr('data-slide-to');        
+        $('.img0').css({
+            backgroundImage:'url(assets/images/team'+no+'.jpg)'
+        }).fadeIn('slow');
+    });
+    $('.carousel-control-next').click(function(){
+        no++;        
+        no<6?no=no:no=0;
+        $('.img0').css({
+            backgroundImage:'url(assets/images/team'+no+'.jpg)'
+        }).fadeIn('slow');
+        $('li').removeClass('active');
+        $('#slidePic'+ no).addClass('active');      
+    });
+    $('.carousel-control-prev').click(function(){
+        no--;        
+        no>-1?no=no:no=5;
+        $('.img0').css({
+            backgroundImage:'url(assets/images/team'+no+'.jpg)'
+        }).fadeIn('slow');
+        $('li').removeClass('active');
+        $('#slidePic'+ no).addClass('active');     
+    });
+    
 });
 app.controller('rechtsprechungCtrl', function ($scope) {
     $scope.openFall = function () {
@@ -154,7 +182,9 @@ app.controller('asideLeftCtrl', function ($scope) {
         $('#ulKanzlei').slideUp('slow');
     });
 });
-app.controller('mainCtrl', function ($scope) {});
+app.controller('mainCtrl', function ($scope) {
+    
+});
 app.controller('schwerpunkteCtrl', function ($scope) {});
 app.controller('familienrechtCtrl', function ($scope) {});
 app.controller('mietrechtCtrl', function ($scope) {});
@@ -163,14 +193,7 @@ app.controller('verkehrsrechtCtrl', function () {
         console.log("HIH");
     });
 });
-app.controller('sliderCtr.', function ($scope) {
-    var x = 30;
-    var y = x * 0.75;
-    $('.slider').css({
-        width: x + "rem",
-        height: y + "rem"
-    });
-});
+
 app.controller('weitereCtrl', function ($scope) {});
 app.controller('emailCtrl', function ($scope) {
     $('#dataCheck').change(function () {

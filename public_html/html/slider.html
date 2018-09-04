@@ -1,75 +1,23 @@
 <div id="slider" ng-controller="sliderCtrl">
-     
-      <!--versteckte Radioboxen--> 
-      <input type="radio" class="radioNav radio1" id="navSlide1" name="coins" checked>
-      <input type="radio" class="radioNav radio2" id="navSlide2" name="coins">
-      <input type="radio" class="radioNav radio3" id="navSlide3" name="coins">
-      <input type="radio" class="radioNav radio4" id="navSlide4" name="coins">
-      <input type="radio" class="radioNav radio5" id="navSlide5" name="coins">
-      <input type="radio" class="radioNav radio6" id="navSlide6" name="coins">
-     
-     <div class="slider row">      
-      <figure class="figure1"></figure>
-      <figure class="figure2"></figure>
-      <figure class="figure3"></figure>
-      <figure class="figure4"></figure>
-      <figure class="figure5"></figure>
-      <figure class="figure6"></figure> 
-        
-    </div><!--end row-->
-    <div class="row">  
-        <div class="col-2"></div>
-        <diV class="p-3 col-1">
-        <label for="navSlide1" class="s-index label1 "></label>
-        </div>
-        <div class="p-3 col-1">
-          <label for="navSlide2" class="s-index label2"></label>
-        </div>
-        <div class="p-3 col-1">
-          <label for="navSlide3" class="s-index label3"></label>
-        </div>
-        <div class="p-3 col-1">
-          <label for="navSlide4" class="s-index label4"></label>
-        </div>
-        <div class="p-3 col-1">
-          <label for="navSlide5" class="s-index label5"></label>
-        </div>
-        <div class="p-3 col-1">
-          <label for="navSlide6" class="s-index label6"></label>
-        </div> 
-        <div class="col-2"></div>
-      </div>
-    
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li id="slidePic0" data-slide-to="0" class="active"></li>
+    <li id="slidePic1" data-slide-to="1"></li>
+    <li id="slidePic2" data-slide-to="2"></li>
+    <li id="slidePic3" data-slide-to="3"></li>
+    <li id="slidePic4" data-slide-to="4"></li>
+    <li id="slidePic5" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item img0 active slide"></div>     
+  </div>
+  <a class="carousel-control-prev" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<!--div id="slider">
-  <table id="tableSlider"> 
-    <tr>    
-      <input type="radio" class="radioNav radio1" id="navSlide1" name="coins" checked>
-      <input type="radio" class="radioNav radio2" id="navSlide2" name="coins">
-      <input type="radio" class="radioNav radio3" id="navSlide3" name="coins">
-      <input type="radio" class="radioNav radio4" id="navSlide4" name="coins">
-      <input type="radio" class="radioNav radio5" id="navSlide5" name="coins">
-      <input type="radio" class="radioNav radio6" id="navSlide6" name="coins">
-    </tr>
-    <tr>
-      <div class="slider">      
-        <figure class="figure1"></figure>
-        <figure class="figure2"></figure>
-        <figure class="figure3"></figure>
-        <figure class="figure4"></figure>
-        <figure class="figure5"></figure>
-        <figure class="figure6"></figure> 
-      </div>
-    </tr> 
-    <tr>
-      <div class="labels">  
-        <label for="navSlide1" class="s-index label1"></label>
-        <label for="navSlide2" class="s-index label2"></label>
-        <label for="navSlide3" class="s-index label3"></label>
-        <label for="navSlide4" class="s-index label4"></label>
-        <label for="navSlide5" class="s-index label5"></label>
-        <label for="navSlide6" class="s-index label6"></label> 
-      </div>
-    </tr> 
-  </table>
-</div-->  
+</div>

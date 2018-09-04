@@ -69,20 +69,23 @@ header{
   display:none;
   z-index:0;
 }
-#logo{   
-  background-image: url('../assets/images/logo.png');     
-  background-size:80% 80%;  
-}
+
 #banner, .miete, .verkehr, .familie, #buerozeiten, #picEmail, #sandwich, #picMain, #logo{
     width:100%;
     padding:0 0 10% 0;
     background-size:100% 100%;  
     background-repeat: no-repeat;        
 }
+#logo{   
+  background-image: url('../assets/images/logo.png');       
+  width:110%; 
+  background-size:100% 80%;
+  cursor:pointer;
+}
 #banner{     
     top:0;
     left:0;
-    height:4rem;
+    height:8rem;
     background-image: url("../assets/images/Banner1.jpg");
     background-size:auto 100%;
     background-repeat:repeat-x;
@@ -100,8 +103,12 @@ header{
     margin:-10% 0 0 0;
 }
 #sandwich{
-    width:50%;
+    width:100%;
+    padding:0 0 40% 0;
 }  
+.linkSandwich{
+    color:darkgray;
+}
 .miete{
     background-image:url('../assets/images/buttonBulletMiete.png');    
 }
@@ -121,6 +128,14 @@ header{
     background-color:whitesmoke;
     border-bottom: 3px orange solid;
 }
+#kanzlei, #kontakt{
+    color:#646464;
+}
+#kanzlei:hover, #kontakt:hover{
+  background-color:whitesmoke;  
+}
+/*#asideLeft .btn-outline-secondary:hover*/
+
 #toggleKanzlei, #toggleKontakt{
     display: none;
 }
@@ -161,10 +176,11 @@ header{
     font-size:1.3rem;
 }
 #cards{
-    background-color:#ffffcc;
+    background-color:#fce4c9;
 }
 #cards .card{
-    background-color:#f3f3ee;
+    margin:2% 2%;
+    background-color:#fff;
 }
 
 #picMain{
@@ -174,9 +190,13 @@ header{
     background-image:url('../assets/images/Rainer_DoeringKanzlei.png');
 }
 
-/**DropdownNavi*/
-
-
+/**Unterseiten*/
+[data-slide]{
+    cursor:pointer;    
+}
+#slider{
+    margin:4% 0;
+}
 #contactForm{
   padding:15px;
   background-color: #fcbc4d;
