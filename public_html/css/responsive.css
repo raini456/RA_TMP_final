@@ -13,6 +13,12 @@
    #navTop{
     margin-top:-8%;
   }
+  #bannerTitleSmall{
+      display:none;
+  }
+  #bannerTitleBig{
+      display:block;
+  }
 }
 
 @media screen and (min-width:576px){
@@ -103,15 +109,23 @@
   #navAsideLeft{
       font-size:1.0rem;
   }
+  #bannerTitleBig{
+      display:none;
+  }
+  #bannerTitleWide{
+      display:block;
+  }
+  #banner h1{
+      margin:3% 0 0 0;
+      font-size:2.0rem;
+  }
 }
 
 @media screen and (min-width:1000px){
-  #titleBanner{ 
-      padding:0 0 24% 0;
-  }
-  #logo1{
-    width:9rem;
-  }
+    .miete, .familie, .verkehr{
+       background-size:70% 70%;
+       padding:0 0 10% 0; 
+    }
 }
 
 
