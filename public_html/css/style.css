@@ -72,14 +72,13 @@ header{
 
 #banner, .miete, .verkehr, .familie, #buerozeiten, #picEmail, #sandwich, #picMain, #logo{
     width:100%;
-    padding:0 0 10% 0;
+    padding:0 0 20% 0;
     background-size:100% 100%;  
     background-repeat: no-repeat;        
 }
 #logo{   
   background-image: url('../assets/images/logo.png');       
-  width:110%; 
-  background-size:100% 80%;
+  background-size:100% 70%;
   cursor:pointer;
 }
 #banner{     
@@ -156,6 +155,9 @@ header{
 }
 #buerozeiten{
    background-image:url('../assets/images/buerozeiten.jpg'); 
+   padding:0 0 100% 0;
+   width:130%;
+   margin:0 0 0 -15%;
 }
 #picEmail{
    margin:10% 0 0 0;
@@ -197,6 +199,12 @@ header{
 #slider{
     margin:4% 0;
 }
+#article1Kanzlei, #articleDatenschutz, #schwerpunkte, #textTeam, #articleFall, #articleRecht, #articleKanzlei, #untertitelMain, .schwerpunkteAll, .taetigkeitenWrapper{
+   padding:0 3%; 
+}
+#untertitelMain{
+    text-align: center;
+}
 #contactForm{
   padding:15px;
   background-color: #fcbc4d;
@@ -218,7 +226,6 @@ header{
   margin:2% 3%;
   padding:3%;
 }
-
 #stadtplan{
   width:70%;
   height:200px;  
